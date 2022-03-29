@@ -1,0 +1,87 @@
+/* CSS HEX 
+--black-chocolate: #131200ff;
+--mantis: #78bc61ff;
+--dark-khaki: #c0c781ff;
+--camel: #c59b76ff;
+--salmon: #e9806eff;
+*/
+
+body{
+    background-color: #F8C6D1;
+}
+
+#tokenSection{
+    display: none;
+}
+
+#songRequestSection{
+    display: none;
+}
+
+.container{
+    padding: 20px;    
+    color: white;
+}
+
+label {
+    color: #D8217D;
+    display: block;
+    text-align: center;
+    line-height: 100%;
+    font-size: 120%;
+    font-family: Arial;
+  }
+
+p {
+    color: #D8217D;
+    text-align: center;
+}
+
+h1 {
+    color: #D8217D;
+    text-align: center;
+}
+
+/* Set a style for all buttons */
+input[type=button] {
+    background-color: #D8217D;
+    color: white;
+    padding: 10px 10px;
+    border: none;
+    cursor: pointer;
+    width: 25%;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+/* half-width inputs */
+input[type=text] {
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  select {
+    background-color: #D8217D;
+    color: white;
+    padding: 14px 20px;
+    border: none;
+    cursor: pointer;
+    margin: 8px 0;
+    width: 50%;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  
+  /* Add a hover effect for buttons */
+  input[type=button]:hover {
+    opacity: 0.8;
+  }

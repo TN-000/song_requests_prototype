@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Song Requests</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link href="style.css" rel="stylesheet">
+    <script src="app.js"></script>
+</head>
+
+<body onload="onPageLoad()">
+    <div class="container">
+        <h1> SONG REQUESTS </h1>
+        <div id="tokenSection">
+            <div>
+                <p>To use this app you need a Spotify client ID and client secret. You get these by 
+                    creating an app in the Spotify developers dashboard here 
+                    <a href="https://developer.spotify.com/dashboard/applications" target="_blank">https://developer.spotify.com/dashboard/applications</a> 
+                     and add <a href="#" target="_blank">"http://127.0.0.1:5500/SpotifyWebAPI-main/"</a> in the "Redirect URIs" settings field.
+                </p>
+            </div>
+            <div>
+                <div>
+                    <label for="clientId" class="form-label">Client ID</label>
+                    <input type="text" class="form-control" id="clientId" placeholder="">
+                </div>
+                <div>
+                    <label for="clientSecret" class="form-label">Client Secret</label>
+                    <input type="text" class="form-control" id="clientSecret" placeholder="">
+                </div>
+                <h1></h1>
+                <input type="button" onclick="requestAuthorisation()" value="Request Authorisation"><br/>
+            </div>
+        </div>
+
+        <div id="songRequestSection">
+            <p> Choose the session your attending. Then, enter the track name and artist. </p>
+            <h1></h1>
+            <h1></h1>
+            <form name=SongRequest method = "post">
+                <label for="eventList" class="form-label">Pick a session from this dropdown</label>
+                <select id="eventList">
+                </select>
+                <input type="text" name="song" placeholder="Song Name">
+                <input type="text" name="artist" placeholder="Artist">
+                <input type="button" onclick="searchTrack()" value="submit">
+            </form>
+            <p id="resultText" style="font-size:200%">-</p>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
